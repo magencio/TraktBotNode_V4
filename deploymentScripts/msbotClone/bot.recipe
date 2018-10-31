@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "resources": [
+    {
+      "type": "abs",
+      "id": "1",
+      "name": "traktbotnodev4"
+    },
+    {
+      "type": "endpoint",
+      "id": "2",
+      "name": "development",
+      "url": "http://localhost:3978/api/messages"
+    },
+    {
+      "type": "endpoint",
+      "id": "3",
+      "name": "production",
+      "url": "https://traktbotnodev4.azurewebsites.net/api/messages"
+    },
+    {
+      "type": "cosmosdb",
+      "id": "4",
+      "name": "botState",
+      "database": "botdb",
+      "collection": "botstate"
+    },
+    {
+      "type": "luis",
+      "id": "5",
+      "name": "TraktBot.EN"
+    },
+    {
+      "type": "generic",
+      "id": "6",
+      "name": "traktTv",
+      "configuration": {
+        "clientId": "<your-trakt.tv-client-id>",
+        "clientSecret": "<your-trakt.tv-client-secret>"
+      }
+    },
+    {
+      "type": "appInsights",
+      "id": "7"
+    }
+  ]
+}

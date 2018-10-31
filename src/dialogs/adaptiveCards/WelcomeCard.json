@@ -1,0 +1,44 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "Image",
+            "url": "http://s3.amazonaws.com/uploads.uservoice.com/logo/design_setting/158177/original/Trakt-FullColorForDarkBGs.png",
+            "size": "stretch"
+        },
+        {
+            "type": "TextBlock",
+            "spacing": "medium",
+            "size": "default",
+            "weight": "bolder",
+            "text": "Welcome to TraktBot!",
+            "wrap": true,
+            "maxLines": 0
+        },
+        {
+            "type": "TextBlock",
+            "size": "default",
+            "text": "Say Hi to start",
+            "wrap": true,
+            "maxLines": 0
+        },
+        {
+            "type": "TextBlock",
+            "size": "default",
+            "isSubtle": "yes",
+            "text": "This bot is powered by Trakt.tv services",
+            "separator": "true",
+            "wrap": true,
+            "maxLines": 0
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "Trakt.tv",
+            "url": "https://trakt.tv"
+        }
+    ]
+}

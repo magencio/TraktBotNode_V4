@@ -1,0 +1,3768 @@
+{
+  "name": "TraktBot.EN",
+  "versionId": "0.1",
+  "desc": "LUIS for TraktBot. English version",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Command.Cancel"
+    },
+    {
+      "name": "Command.Help"
+    },
+    {
+      "name": "Command.Logout"
+    },
+    {
+      "name": "Confirmation.No"
+    },
+    {
+      "name": "Confirmation.Yes"
+    },
+    {
+      "name": "Education.Bye"
+    },
+    {
+      "name": "Education.Hi"
+    },
+    {
+      "name": "Education.Thx"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "Shows.Popular"
+    },
+    {
+      "name": "Shows.Recommendations"
+    },
+    {
+      "name": "Shows.Search"
+    },
+    {
+      "name": "Shows.Status"
+    },
+    {
+      "name": "Shows.Trending"
+    },
+    {
+      "name": "Shows.Watched"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Show",
+      "roles": []
+    },
+    {
+      "name": "Episode",
+      "children": [
+        "SeasonNumber",
+        "EpisodeNumber"
+      ],
+      "roles": []
+    }
+  ],
+  "closedLists": [],
+  "composites": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "regex_features": [
+    {
+      "pattern": "s\\d+e\\d+",
+      "activated": true,
+      "name": "sSEASONeEPISODE"
+    },
+    {
+      "pattern": "\\d+x\\d+",
+      "activated": true,
+      "name": "SEASONxEPISODE"
+    }
+  ],
+  "model_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "/start",
+      "intent": "Education.Hi",
+      "entities": []
+    },
+    {
+      "text": "4",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "adios",
+      "intent": "Education.Bye",
+      "entities": []
+    },
+    {
+      "text": "alex",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "bye",
+      "intent": "Education.Bye",
+      "entities": []
+    },
+    {
+      "text": "bye bye",
+      "intent": "Education.Bye",
+      "entities": []
+    },
+    {
+      "text": "bye!",
+      "intent": "Education.Bye",
+      "entities": []
+    },
+    {
+      "text": "can i get some recommendations?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "can you find me grey's anatomy?",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 16,
+          "endPos": 29,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "can you find me penny dreadful?",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 16,
+          "endPos": 29,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "can you find some shows?",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "can you find something about sons of anarchy?",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 29,
+          "endPos": 43,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "can you help me?",
+      "intent": "Command.Help",
+      "entities": []
+    },
+    {
+      "text": "can you please find something about sons of anarchy?",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 36,
+          "endPos": 50,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "can you please recommend me a show?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "can you please recommend me some nice shows for today?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "can you recommend me a show?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "can you recommend me shows?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "can you recommend me some cool shows?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "can you recommend me some games?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "can you recommend me some nice shows?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "can you recommend me some shows?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "can you recommend me something?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "can you search for ash vs evil dead?",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 19,
+          "endPos": 34,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "can you show me popular shows?",
+      "intent": "Shows.Popular",
+      "entities": []
+    },
+    {
+      "text": "can you show me the most popular shows right now?",
+      "intent": "Shows.Popular",
+      "entities": []
+    },
+    {
+      "text": "can you show me the trending shows?",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "can you show me trending shows?",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "can you show me trening shows?",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "cancel",
+      "intent": "Command.Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel it",
+      "intent": "Command.Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel please",
+      "intent": "Command.Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel this",
+      "intent": "Command.Cancel",
+      "entities": []
+    },
+    {
+      "text": "close session",
+      "intent": "Command.Logout",
+      "entities": []
+    },
+    {
+      "text": "close traktv session",
+      "intent": "Command.Logout",
+      "entities": []
+    },
+    {
+      "text": "close trat.tv session",
+      "intent": "Command.Logout",
+      "entities": []
+    },
+    {
+      "text": "could you find me sons of anarchy?",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 32,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "could you help me please?",
+      "intent": "Command.Help",
+      "entities": []
+    },
+    {
+      "text": "could you tell me some other interesting show?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "episode watched",
+      "intent": "Shows.Watched",
+      "entities": []
+    },
+    {
+      "text": "exit",
+      "intent": "Command.Cancel",
+      "entities": []
+    },
+    {
+      "text": "exit now",
+      "intent": "Command.Cancel",
+      "entities": []
+    },
+    {
+      "text": "exit this",
+      "intent": "Command.Cancel",
+      "entities": []
+    },
+    {
+      "text": "exit trakt.tv",
+      "intent": "Command.Logout",
+      "entities": []
+    },
+    {
+      "text": "find anarchy",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 11,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find batman beyond",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 17,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find blindspot",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 13,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find cage",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 8,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find daredevil",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 13,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find dragon ball",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 15,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find fear the walking dead",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 25,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find flash gordon",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 16,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find friends",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 11,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find game of thrones",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 19,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find grey's anatomy",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 18,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find how i met your mother",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 25,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find luke",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 8,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find luke cage",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 13,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find marvel's luke cage",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 22,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find rick and morty show",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 18,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find robotech",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 12,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find the big bang theory",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 23,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find the flash",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 13,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find the walking dead now",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 20,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find walking dead",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 16,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "find wayward pines",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 5,
+          "endPos": 17,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "get popular shows",
+      "intent": "Shows.Popular",
+      "entities": []
+    },
+    {
+      "text": "get show's status",
+      "intent": "Shows.Status",
+      "entities": []
+    },
+    {
+      "text": "get trending shows",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "good bye",
+      "intent": "Education.Bye",
+      "entities": []
+    },
+    {
+      "text": "good bye!",
+      "intent": "Education.Bye",
+      "entities": []
+    },
+    {
+      "text": "good morning!",
+      "intent": "Education.Hi",
+      "entities": []
+    },
+    {
+      "text": "gracias",
+      "intent": "Education.Thx",
+      "entities": []
+    },
+    {
+      "text": "has battlestar galactica been canceled?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 4,
+          "endPos": 23,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "has blindspot been canceled?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 4,
+          "endPos": 12,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "has fear the walking dead been canceled?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 4,
+          "endPos": 24,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "has fear the walking dead been cancelled?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 4,
+          "endPos": 24,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "has grimm been cancelled?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 4,
+          "endPos": 8,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "has how i met your mother been canceled?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 4,
+          "endPos": 24,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "has it been canceled?",
+      "intent": "Shows.Status",
+      "entities": []
+    },
+    {
+      "text": "has it been cancelled?",
+      "intent": "Shows.Status",
+      "entities": []
+    },
+    {
+      "text": "has izombie been canceled?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 4,
+          "endPos": 10,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "has rome been canceled?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 4,
+          "endPos": 7,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "has sons of anarchy finished?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 4,
+          "endPos": 18,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "has the walking dead been canceled?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 4,
+          "endPos": 19,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "hello",
+      "intent": "Education.Hi",
+      "entities": []
+    },
+    {
+      "text": "hello there",
+      "intent": "Education.Hi",
+      "entities": []
+    },
+    {
+      "text": "hello!",
+      "intent": "Education.Hi",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "Command.Help",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "Command.Help",
+      "entities": []
+    },
+    {
+      "text": "help me please",
+      "intent": "Command.Help",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Education.Hi",
+      "entities": []
+    },
+    {
+      "text": "hi there",
+      "intent": "Education.Hi",
+      "entities": []
+    },
+    {
+      "text": "hi there man",
+      "intent": "Education.Hi",
+      "entities": []
+    },
+    {
+      "text": "hi there man!",
+      "intent": "Education.Hi",
+      "entities": []
+    },
+    {
+      "text": "hi!",
+      "intent": "Education.Hi",
+      "entities": []
+    },
+    {
+      "text": "hola",
+      "intent": "Education.Hi",
+      "entities": []
+    },
+    {
+      "text": "how are you doing?",
+      "intent": "Education.Hi",
+      "entities": []
+    },
+    {
+      "text": "i have watched episode 3 of season 4 for the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 23,
+          "endPos": 23,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 35,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 41,
+          "endPos": 56,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i just watched episode 3",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 23,
+          "endPos": 23,
+          "entity": "Episode::EpisodeNumber"
+        }
+      ]
+    },
+    {
+      "text": "i need help",
+      "intent": "Command.Help",
+      "entities": []
+    },
+    {
+      "text": "i need to logoff",
+      "intent": "Command.Logout",
+      "entities": []
+    },
+    {
+      "text": "i saw a show",
+      "intent": "Shows.Watched",
+      "entities": []
+    },
+    {
+      "text": "i saw episode 3 season 1 of how i met your mother",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 14,
+          "endPos": 14,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 23,
+          "endPos": 23,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 28,
+          "endPos": 48,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i saw episode 3x2 of battlestar galactica",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 14,
+          "endPos": 16,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 21,
+          "endPos": 40,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i saw episode 4 of game of thrones",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 14,
+          "endPos": 14,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 19,
+          "endPos": 33,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i saw episode s02e01 of fear the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 14,
+          "endPos": 19,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 24,
+          "endPos": 44,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i saw season 4 episode 1 of battlestar galactica",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 13,
+          "endPos": 13,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 23,
+          "endPos": 23,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 28,
+          "endPos": 47,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i saw sons of anarchy two days ago",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 6,
+          "endPos": 20,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i want information on marvel's the defenders",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 22,
+          "endPos": 43,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i want to find a show",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "i want to find fear the walking dead",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 15,
+          "endPos": 35,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i want to find quit",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 15,
+          "endPos": 18,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i want to find some shows",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "i want to find something about galactica",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 31,
+          "endPos": 39,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i want to find the walking dead",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 15,
+          "endPos": 30,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i want to know stuff about sons of anarchy",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 27,
+          "endPos": 41,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i want to logout",
+      "intent": "Command.Logout",
+      "entities": []
+    },
+    {
+      "text": "i want to mark a new episode of game of thrones as watched",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 32,
+          "endPos": 46,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i want to perform a search",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "i want to search",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "i want to search fear the walking dead",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 17,
+          "endPos": 37,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i want to search for shows",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "i want to search shows",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "i want to search shows right now",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "i watched 1x03 of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 13,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 18,
+          "endPos": 32,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched 1x2 of the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 12,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 17,
+          "endPos": 32,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched 1x3",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 12,
+          "entity": "Episode"
+        }
+      ]
+    },
+    {
+      "text": "i watched 3x6 of how i met your mother",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 12,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 17,
+          "endPos": 37,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched a new episode of games of thrones",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 27,
+          "endPos": 42,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched a new episode of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 27,
+          "endPos": 41,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched a show",
+      "intent": "Shows.Watched",
+      "entities": []
+    },
+    {
+      "text": "i watched an episode",
+      "intent": "Shows.Watched",
+      "entities": []
+    },
+    {
+      "text": "i watched an episode for marvel's runaways",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 25,
+          "endPos": 41,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched battlestar galactica",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 29,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 1x3 of the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 20,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 25,
+          "endPos": 40,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 2 of season 3 of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 49,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 2 of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 23,
+          "endPos": 37,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 2 season 1 of rome",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 27,
+          "endPos": 27,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 32,
+          "endPos": 35,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3 of season 2",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3 of season 2 of rome",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 38,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3 of season 2 of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 49,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3 of season 4",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3 of season 4 of sons of anarchy today",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 49,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3 of season 5",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3 of season 5 of battlestar galactica",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 54,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3 of season 5 of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 49,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3 of season 7 of battlestar galactica",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 54,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3 of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 23,
+          "endPos": 37,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3 season 4 of parks and recreation",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 27,
+          "endPos": 27,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 32,
+          "endPos": 51,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3x03 of parks and recreation",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 21,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 26,
+          "endPos": 45,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 3x2",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 20,
+          "entity": "Episode"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 4 of season 2 of sons",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 38,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 4 of season 2 of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 49,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 7",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode 7 season 4 of the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 27,
+          "endPos": 27,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 32,
+          "endPos": 47,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode s01e03",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 23,
+          "entity": "Episode"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode s01e04",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 23,
+          "entity": "Episode"
+        }
+      ]
+    },
+    {
+      "text": "i watched episode s1e3 of the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 21,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 26,
+          "endPos": 41,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched marvel's runaways",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 26,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched rome",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 13,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched s03e05",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 15,
+          "entity": "Episode"
+        }
+      ]
+    },
+    {
+      "text": "i watched s03e06 of the big bang theory",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 15,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 20,
+          "endPos": 38,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched s04e0007",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 17,
+          "entity": "Episode"
+        }
+      ]
+    },
+    {
+      "text": "i watched s05e07 of battlestar galactica",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 15,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 20,
+          "endPos": 39,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched s3e1 of the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 13,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 18,
+          "endPos": 33,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched s3e5",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 13,
+          "entity": "Episode"
+        }
+      ]
+    },
+    {
+      "text": "i watched s4e06",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 14,
+          "entity": "Episode"
+        }
+      ]
+    },
+    {
+      "text": "i watched season 2",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 17,
+          "endPos": 17,
+          "entity": "Episode::SeasonNumber"
+        }
+      ]
+    },
+    {
+      "text": "i watched season 2 episode 1 of the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 17,
+          "endPos": 17,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 27,
+          "endPos": 27,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 32,
+          "endPos": 47,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched season 3",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 17,
+          "endPos": 17,
+          "entity": "Episode::SeasonNumber"
+        }
+      ]
+    },
+    {
+      "text": "i watched season 3 of the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 17,
+          "endPos": 17,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 22,
+          "endPos": 37,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched season 4",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 17,
+          "endPos": 17,
+          "entity": "Episode::SeasonNumber"
+        }
+      ]
+    },
+    {
+      "text": "i watched season 4 of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 17,
+          "endPos": 17,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 22,
+          "endPos": 36,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched season 5",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 17,
+          "endPos": 17,
+          "entity": "Episode::SeasonNumber"
+        }
+      ]
+    },
+    {
+      "text": "i watched sons",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 13,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 24,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched the show alex",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 19,
+          "endPos": 22,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i watched this yesterday",
+      "intent": "Shows.Watched",
+      "entities": []
+    },
+    {
+      "text": "i would like to find a show",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "i would like to get some recommendations",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "i would like to search for some shows",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "is adventure time returning?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 16,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "is battlestar galactica returning?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 22,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "is castle returning?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 8,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "is gotham returning?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 8,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "is hunters canceled?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 9,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "is hunters cancelled?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 9,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "is it a returning series?",
+      "intent": "Shows.Status",
+      "entities": []
+    },
+    {
+      "text": "is it returning?",
+      "intent": "Shows.Status",
+      "entities": []
+    },
+    {
+      "text": "is rome cancelled?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 6,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "is rome returning soon?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 6,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "is rome returning?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 6,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "is sons of anarchy a returning series?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 17,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "is the 100 returning?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 9,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "is the walking dead a returning series?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 18,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "is the walking dead cancelled?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 18,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "is the walking dead returning?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 3,
+          "endPos": 18,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've seen a show today",
+      "intent": "Shows.Watched",
+      "entities": []
+    },
+    {
+      "text": "i've seen an episode in season 5 of game of thrones",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 31,
+          "endPos": 31,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 36,
+          "endPos": 50,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've seen an episode of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 24,
+          "endPos": 38,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've seen another episode of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 29,
+          "endPos": 43,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've seen battlestar galactica",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 29,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've seen episode 3",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        }
+      ]
+    },
+    {
+      "text": "i've seen episode 3 of season 2 of fear the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 55,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've seen episode 3 of season 4 of battlestar galactica",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 54,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've seen episode 3 of season 4 of the simpsons",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 46,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've seen episode 3x05 of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 21,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 26,
+          "endPos": 40,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've seen episode 3x2 of fear the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 20,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 25,
+          "endPos": 45,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've seen episode 7",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        }
+      ]
+    },
+    {
+      "text": "i've seen episode 7 of season 6 of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 18,
+          "endPos": 18,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 49,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've seen narcos",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 15,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've seen season 6 of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 17,
+          "endPos": 17,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 22,
+          "endPos": 36,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've watched 1x1 of luke cage",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 13,
+          "endPos": 15,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 20,
+          "endPos": 28,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've watched 1x19 of blindspot",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 13,
+          "endPos": 16,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 21,
+          "endPos": 29,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've watched 3x1 of the flash",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 13,
+          "endPos": 15,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 20,
+          "endPos": 28,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've watched episode 1 of season 3 of the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 21,
+          "endPos": 21,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 33,
+          "endPos": 33,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 38,
+          "endPos": 53,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've watched episode 3 of season 1 of marvel's luke cage",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 21,
+          "endPos": 21,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 33,
+          "endPos": 33,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 38,
+          "endPos": 55,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've watched episode 3 of season 1 of rick and morty",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 21,
+          "endPos": 21,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 33,
+          "endPos": 33,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 38,
+          "endPos": 51,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've watched episode 3 of season 4 of rome",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 21,
+          "endPos": 21,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 33,
+          "endPos": 33,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 38,
+          "endPos": 41,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've watched episode 3 of season 4 of the show rome",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 21,
+          "endPos": 21,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 33,
+          "endPos": 33,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 47,
+          "endPos": 50,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've watched episode 3 season 2",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 21,
+          "endPos": 21,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        }
+      ]
+    },
+    {
+      "text": "i've watched episode 3x01 of rome",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 21,
+          "endPos": 24,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 29,
+          "endPos": 32,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've watched episode 3x2 of the last man on earth",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 21,
+          "endPos": 23,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 28,
+          "endPos": 48,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've watched season 1 episode 3 of parks and recreation",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 20,
+          "endPos": 20,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 30,
+          "endPos": 30,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 54,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "i've watched the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 13,
+          "endPos": 28,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "let me search shows",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "log off",
+      "intent": "Command.Logout",
+      "entities": []
+    },
+    {
+      "text": "log out",
+      "intent": "Command.Logout",
+      "entities": []
+    },
+    {
+      "text": "logout",
+      "intent": "Command.Logout",
+      "entities": []
+    },
+    {
+      "text": "logout from trakt.tv",
+      "intent": "Command.Logout",
+      "entities": []
+    },
+    {
+      "text": "look for battlestar galactica",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 9,
+          "endPos": 28,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "look for blindspot",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 9,
+          "endPos": 17,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "look for stranger things",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 9,
+          "endPos": 23,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "look for the 100",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 9,
+          "endPos": 15,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "look for wayward pines",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 9,
+          "endPos": 21,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "mark episode as watched",
+      "intent": "Shows.Watched",
+      "entities": []
+    },
+    {
+      "text": "mark show as watched",
+      "intent": "Shows.Watched",
+      "entities": []
+    },
+    {
+      "text": "may you recommend me some shows?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "may you recommend me something?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "no",
+      "intent": "Confirmation.No",
+      "entities": []
+    },
+    {
+      "text": "no thank you",
+      "intent": "Confirmation.No",
+      "entities": []
+    },
+    {
+      "text": "no thx",
+      "intent": "Confirmation.No",
+      "entities": []
+    },
+    {
+      "text": "no, i don't want that",
+      "intent": "Confirmation.No",
+      "entities": []
+    },
+    {
+      "text": "nope",
+      "intent": "Confirmation.No",
+      "entities": []
+    },
+    {
+      "text": "perform a search",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "please search shows for me",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "please tell me popular shows",
+      "intent": "Shows.Popular",
+      "entities": []
+    },
+    {
+      "text": "please, let me search for shows",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "please, look for rome",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 17,
+          "endPos": 20,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "please, recommend me good shows",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "popular",
+      "intent": "Shows.Popular",
+      "entities": []
+    },
+    {
+      "text": "popular shows",
+      "intent": "Shows.Popular",
+      "entities": []
+    },
+    {
+      "text": "quit",
+      "intent": "Command.Cancel",
+      "entities": []
+    },
+    {
+      "text": "quit now",
+      "intent": "Command.Cancel",
+      "entities": []
+    },
+    {
+      "text": "recommend",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "recommend me some shows",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "recommend me something for today",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "recommend shows",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "recommendations",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "recommended",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "recommended shows",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "salchichón",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "search",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "search battlestar",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 7,
+          "endPos": 16,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search battlestar galactica",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 7,
+          "endPos": 26,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for a show",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "search for alex",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 14,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for battlestar",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 20,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for battlestar galactica",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 30,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for blindspot",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 19,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for dragon ball",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 21,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for fear the walking dead",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 31,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for friends",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 17,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for futurama",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 18,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for highschool of dead",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 28,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for kk",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 12,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for luck cage",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 19,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for lucke cage",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 20,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for luke cage",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 19,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for marvel's",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 18,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for marvel's luke cage",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 28,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for marvel's luke ckage",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 29,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for penny dreadful",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 24,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for rick and morty",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 24,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for rome",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 14,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for salchichón",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 20,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for sherlock",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 18,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for sons",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 14,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for star trek",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 19,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for the big bang theory",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 29,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for the flash",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 19,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for the walking",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 21,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search for the walking dead",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 26,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search grey's anatomy",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 7,
+          "endPos": 20,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search how i met your mother",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 7,
+          "endPos": 27,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search kk",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 7,
+          "endPos": 8,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search luke cage",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 7,
+          "endPos": 15,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search marvel's daredevil",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 7,
+          "endPos": 24,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search marvel's luke cage",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 7,
+          "endPos": 24,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search show",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "search shows",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "search sons",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 7,
+          "endPos": 10,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "search sons of anarchy",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 7,
+          "endPos": 21,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "see you later",
+      "intent": "Education.Bye",
+      "entities": []
+    },
+    {
+      "text": "see you!",
+      "intent": "Education.Bye",
+      "entities": []
+    },
+    {
+      "text": "show me popular shows",
+      "intent": "Shows.Popular",
+      "entities": []
+    },
+    {
+      "text": "show me the trending shows",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "show me trending shows",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "show status",
+      "intent": "Shows.Status",
+      "entities": []
+    },
+    {
+      "text": "shows",
+      "intent": "Shows.Search",
+      "entities": []
+    },
+    {
+      "text": "so you've watched episode 1x3 of the walking dead. is that correct?",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 26,
+          "endPos": 28,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 33,
+          "endPos": 48,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "status",
+      "intent": "Shows.Status",
+      "entities": []
+    },
+    {
+      "text": "status for alex",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 14,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "status for sons",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 11,
+          "endPos": 14,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "status of aftermath",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 18,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "status of santa clarita",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 10,
+          "endPos": 22,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "tell me the status of santa clarita's diet",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 22,
+          "endPos": 41,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "thank you",
+      "intent": "Education.Thx",
+      "entities": []
+    },
+    {
+      "text": "thank you very much",
+      "intent": "Education.Thx",
+      "entities": []
+    },
+    {
+      "text": "thank you very much!",
+      "intent": "Education.Thx",
+      "entities": []
+    },
+    {
+      "text": "thank you!",
+      "intent": "Education.Thx",
+      "entities": []
+    },
+    {
+      "text": "thanks",
+      "intent": "Education.Thx",
+      "entities": []
+    },
+    {
+      "text": "thanks a lot",
+      "intent": "Education.Thx",
+      "entities": []
+    },
+    {
+      "text": "thanks to you!",
+      "intent": "Education.Thx",
+      "entities": []
+    },
+    {
+      "text": "thx",
+      "intent": "Education.Thx",
+      "entities": []
+    },
+    {
+      "text": "thx a lot",
+      "intent": "Education.Thx",
+      "entities": []
+    },
+    {
+      "text": "thx!",
+      "intent": "Education.Thx",
+      "entities": []
+    },
+    {
+      "text": "trending",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "trending shows",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "watched",
+      "intent": "Shows.Watched",
+      "entities": []
+    },
+    {
+      "text": "watched 10x09 grey's anatomy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 8,
+          "endPos": 12,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 14,
+          "endPos": 27,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "watched 1x2 the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 8,
+          "endPos": 10,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 8,
+          "endPos": 27,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "watched 1x3 battlestar galactica",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 8,
+          "endPos": 10,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 12,
+          "endPos": 31,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "watched 1x3 of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 8,
+          "endPos": 10,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 15,
+          "endPos": 29,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "watched 3x2 rome",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 8,
+          "endPos": 10,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 12,
+          "endPos": 15,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "watched 6x08 blindspot",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 8,
+          "endPos": 11,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 13,
+          "endPos": 21,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "watched alex",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 8,
+          "endPos": 11,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "watched episode 17 of season 34 of sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 16,
+          "endPos": 17,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 29,
+          "endPos": 30,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 35,
+          "endPos": 49,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "watched episode 3 of season 2 of the walking dead",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 16,
+          "endPos": 16,
+          "entity": "Episode::EpisodeNumber"
+        },
+        {
+          "startPos": 28,
+          "endPos": 28,
+          "entity": "Episode::SeasonNumber"
+        },
+        {
+          "startPos": 33,
+          "endPos": 48,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "watched s03e05 sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 8,
+          "endPos": 13,
+          "entity": "Episode"
+        },
+        {
+          "startPos": 15,
+          "endPos": 29,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "watched s03e06",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 8,
+          "endPos": 13,
+          "entity": "Episode"
+        }
+      ]
+    },
+    {
+      "text": "watched show",
+      "intent": "Shows.Watched",
+      "entities": []
+    },
+    {
+      "text": "watched sons of anarchy",
+      "intent": "Shows.Watched",
+      "entities": [
+        {
+          "startPos": 8,
+          "endPos": 22,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "what are the best shows today?",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "what are the trending shows today?",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "what are tye most popular shows today?",
+      "intent": "Shows.Popular",
+      "entities": []
+    },
+    {
+      "text": "what do you know about galactica?",
+      "intent": "Shows.Search",
+      "entities": [
+        {
+          "startPos": 23,
+          "endPos": 31,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "what is the status of battlestar galactica?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 22,
+          "endPos": 41,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "what shows you recommends me today?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "what's the status of battlestar galactica?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 21,
+          "endPos": 40,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "what's the status of star trek the next generation?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 21,
+          "endPos": 49,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "what's up!",
+      "intent": "Education.Hi",
+      "entities": []
+    },
+    {
+      "text": "which are the most popular shows at the moment?",
+      "intent": "Shows.Popular",
+      "entities": []
+    },
+    {
+      "text": "which are the most popular shows on tv?",
+      "intent": "Shows.Popular",
+      "entities": []
+    },
+    {
+      "text": "which are the most popular shows today",
+      "intent": "Shows.Popular",
+      "entities": []
+    },
+    {
+      "text": "which are the most popular shows?",
+      "intent": "Shows.Popular",
+      "entities": []
+    },
+    {
+      "text": "which are the most trending shows?",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "which are the show trends?",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "which are the trending shows at the moment?",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "which are the trending shows right now?",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "which is the status of battlestar galactica?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 23,
+          "endPos": 42,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "which is the status of how i met your mother?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 23,
+          "endPos": 43,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "which is the status of luke cage?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 23,
+          "endPos": 31,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "which is the status of sons of anarchy",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 23,
+          "endPos": 37,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "which is the status of sons of anarchy?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 23,
+          "endPos": 37,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "which is the status of the big bang theory?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 23,
+          "endPos": 41,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "which is the status of the walking dead?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 23,
+          "endPos": 38,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "which is the status of wayward pines?",
+      "intent": "Shows.Status",
+      "entities": [
+        {
+          "startPos": 23,
+          "endPos": 35,
+          "entity": "Show"
+        }
+      ]
+    },
+    {
+      "text": "which shows are popular?",
+      "intent": "Shows.Popular",
+      "entities": []
+    },
+    {
+      "text": "which shows are trending right now?",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "which shows are trening?",
+      "intent": "Shows.Trending",
+      "entities": []
+    },
+    {
+      "text": "which shows can you recommend me ?",
+      "intent": "Shows.Recommendations",
+      "entities": []
+    },
+    {
+      "text": "yeap",
+      "intent": "Confirmation.Yes",
+      "entities": []
+    },
+    {
+      "text": "yes",
+      "intent": "Confirmation.Yes",
+      "entities": []
+    },
+    {
+      "text": "yes please",
+      "intent": "Confirmation.Yes",
+      "entities": []
+    },
+    {
+      "text": "yes sir!",
+      "intent": "Confirmation.Yes",
+      "entities": []
+    },
+    {
+      "text": "yes thank you",
+      "intent": "Confirmation.Yes",
+      "entities": []
+    }
+  ]
+}
